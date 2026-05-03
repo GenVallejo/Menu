@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>En boca de todos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>🍔 En boca de todos</h1>
+    <h2 class="subtitulo">Menú principal</h2>
+
+    <div class="menu">
+        <a href="/hamburguesas">Hamburguesas</a>
+        <a href="/platanos">Plátanos</a>
+    </div>
+    {% for item in menu %}
+    <div class="card">
+        <img src="{{ item.imagen }}" alt="">
+        <h2>{{ item.nombre }}</h2>
+        <p>{{ item.descripcion }}</p>
+        <span>₡{{ item.precio }}</span>
+    </div>
+    {% endfor %}
+</body>
+</html>

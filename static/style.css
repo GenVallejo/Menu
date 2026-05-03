@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+/* Encabezado */
+h1 {
+    color: #fff;
+    background: #e67e22;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Menú principal */
+.menu {
+    margin-top: 50px;
+}
+
+.menu a {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px 30px;
+    background: #fff;
+    color: #e67e22;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    transform: scale(1.1);
+}
+
+/* Tarjetas */
+.card {
+    background: white;
+    margin: 20px auto;
+    padding: 15px;
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Imagen */
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Texto */
+.card h2 {
+    margin: 10px 0;
+}
+
+.btn-volver {
+    display: inline-block;
+    margin: 20px;
+    padding: 12px 25px;
+    background: #e67e22;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* efecto al pasar el mouse */
+.btn-volver:hover {
+    background: #ca6f1e;
+    transform: scale(1.05);
+}
+.subtitulo {
+    display: inline-block;
+    background: white;
+    color: #e67e22;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 22px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}.menu {
+    display: flex;
+    flex-direction: column;   /* 👈 los pone uno debajo del otro */
+    align-items: center;      /* 👈 los centra horizontalmente */
+    margin-top: 40px;
+}
+
+.menu a {
+    width: 250px;
+    text-align: center;
+    margin: 10px 0;           /* espacio entre botones */
+}
+.card span {
+    color: #e67e22;
+    font-weight: bold;
+    font-size: 18px;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.btn-whatsapp {
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 20px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+}

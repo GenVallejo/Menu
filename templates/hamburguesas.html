@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hamburguesas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="header">
+    <h1>🍔 Hamburguesas</h1>
+</div>
+
+<div class="contenedor">
+
+{% for item in menu %}
+<div class="card">
+    <img src="{{ item.imagen }}" alt="">
+    
+    <div class="card-body">
+        <h2>{{ item.nombre }}</h2>
+        <p>{{ item.descripcion }}</p>
+        <p class="precio">₡{{ item.precio }}</p>
+
+        <a href="https://wa.me/50687590802?text=Hola,%20quiero%20pedir%20{{ item.nombre }}" 
+           target="_blank" 
+           class="btn-whatsapp">
+           Pedir por WhatsApp
+        </a>
+    </div>
+</div>
+{% endfor %}
+
+</div>
+
+<a href="/" class="btn-volver">← Volver</a>
+
+</body>
+</html>
